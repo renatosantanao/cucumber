@@ -1,5 +1,5 @@
 Dado("que eu acesso a pagina de login") do
-    visit 'https://login.xxxxx.com.br'
+    visit 'https://login.xxxxxxx.com.br'
 end
 
 Quando("eu faco o login com {string} e {string} e {string}") do |office,login, senha|
