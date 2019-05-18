@@ -3,12 +3,9 @@ Dado("que eu acesso a pagina de login") do
 end
 
 Quando("eu faco o login com {string} e {string} e {string}") do |office,login, senha|
-    @login=login
-    find('#btn-login-legalOne').click
-    find('#Escritorio').set office
-    find('#Usuario').set login
-    find('#Senha').set senha
-    find('#entrar').click
+    @login = login
+    login = LoginPage.new
+    login.Faz_login(login, senha)
 end
 
 Então("devo ser autenticado com sucesso") do
